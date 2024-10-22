@@ -1,0 +1,18 @@
+body {
+    background-color: rgb(37, 24, 33);
+    color: rgb(112, 108, 108);
+    text-decoration: none;  
+}
+
+body:visited{
+    color: rgb(122,108,108);
+}
+
+.menu_class {
+    list-style: none;
+}
+
+.game_list {
+    align-items: center;
+}
+

@@ -1,0 +1,75 @@
+html, body {
+    margin: 0;
+    height: 100%;
+}
+
+body {
+    background-color: rgb(37, 24, 33);
+
+}
+
+a {
+    text-decoration: none;
+}
+
+a:visited {
+    color: white
+}
+
+.menu_class {
+    display: flex;
+    font-size: 30px;
+    list-style: none;
+    color: white;
+    align-items: center;
+    justify-content: center;
+    flex-flow: row wrap;
+    gap: 30px;
+    padding: 0%;
+}
+
+.list-block{
+    max-width: 100%;
+    max-height: 100%;
+    text-align: center;
+}
+
+.game-table{
+    width: 100%;
+}
+
+th {
+    font-size: 17px;
+    color: white;
+    text-align: center;
+}
+
+td {
+    font-size: 15px;
+    color: white;
+    text-align: center;
+    padding: 3px;
+    border: 1px dashed rgba(255, 255, 255, 0.171);
+}
+
+.pagination-class{
+    color: white;
+}
+
+.footer_class {
+    color: white;
+    text-align: center;
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+}
+
+.game_list {
+    color: rgb(185, 184, 184);
+}
+
+.register-class {
+    color: white;
+    text-align: center;
+}

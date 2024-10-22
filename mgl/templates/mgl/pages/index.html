@@ -1,0 +1,50 @@
+{% extends "mgl/base.html" %}
+
+{% block content %}
+
+<div class="list-block"> 
+    <table class="game-table">
+        <thead>
+            <tr class="table-fields">
+                <th class = "table-header">Image</th>
+                <th class = "table-header">Name</th>
+                <th class = "table-header">Hours taken</th>
+                <th class = "table-header">Finished date</th>
+                <th class = "table-header">About</th>
+                <th class = "table-header">Other</th>
+            </tr>
+        </thead>
+
+        <tbody>
+            {% for gameitems in gameitems %}
+                <tr class="">
+                    <td class=""><a>{% if gameitems.game_image %} <img src="{{gameitems.game_image.url}}" alt="Capa do {{gameitems.game_name}}"> {% endif %} </td>
+                    <td class="table-cel"><a>{{ gameitems.game_name }}</td>
+                    <td class="table-cel"><a>{{ gameitems.hours_taken }}</td>
+                    <td class="table-cel"><a>{{ gameitems.date_finished }}</td>
+                    <td class="table-cel"><a>{{ gameitems.about }}</td>
+                    <td class="table-cel"><a>{{ gameitems.other }}</td>
+                </tr>
+            {% endfor %}
+        </tbody>
+    </table>
+    
+
+
+<div class="register-class">
+
+    <form action="" method="post" enctype="multipart/form-data">
+
+        {% csrf_token %}
+
+        {{ form.as_p }}
+
+        <input type="submit" value="Salvar">
+
+    </form>
+
+</div>
+
+</div>
+
+{% endblock content %}

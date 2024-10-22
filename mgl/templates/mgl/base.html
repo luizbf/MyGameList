@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MyGameList {{ site_title }}</title>
+
+    {% load static %}
+
+    <link rel="stylesheet" href="{% static 'mgl/css/remedy.css' %}">
+    <link rel="stylesheet" href="{% static 'mgl/css/style.css' %}">
+
+</head>
+<body>
+
+    {% include "mgl/partials/_menu.html" %}
+
+    {% block content %}{% endblock content %}
+
+    {% include "mgl/partials/_footer.html" %}
+
+</body>
+</html>
